@@ -1,6 +1,3 @@
-// Copyright 2015 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
 import 'package:flutter/material.dart';
 import 'package:baoonline/common/services.dart';
 import 'package:baoonline/news/news_page.dart';
@@ -75,16 +72,13 @@ class BaoOnlineAppState extends State<BaoOnline>
                 controller: _controller,
                 children: PAGES.map((Page page) {
                   switch (page.service) {
-                    case Service.HACKER_NEWS:
+                    case Service.TOTAL_NEWS:
                       return new NewsPage();
                       break;
-                    case Service.REDDIT:
+                    case Service.NEWS_HEALTH:
                       return new NewsPage();
                       break;
-                    case Service.IMGUR:
-                      return new NewsPage();
-                      break;
-                    case Service.GITHUB:
+                    case Service.LIVE_STRONG:
                       return new NewsPage();
                       break;
                   }

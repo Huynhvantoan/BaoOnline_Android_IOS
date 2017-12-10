@@ -15,17 +15,17 @@ class Page {
 final List<Page> PAGES = <Page>[
   new Page(
       service: Service.TOTAL_NEWS,
-      text: Strings.hackerNews,
+      text: Strings.total_news,
       icon: 'ycombinator.png',
       color: Colors.deepOrange),
   new Page(
       service: Service.NEWS_HEALTH,
-      text: Strings.reddit,
+      text: Strings.news_health,
       icon: 'reddit.png',
       color: Colors.blue),
   new Page(
       service: Service.LIVE_STRONG,
-      text: Strings.imgur,
+      text: Strings.live_strong,
       icon: 'imgur.png',
       color: Colors.green)
 ];
