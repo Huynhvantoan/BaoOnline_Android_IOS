@@ -28,13 +28,13 @@ class BaoOnlineAppState extends State<BaoOnline>
   @override
   void initState() {
     super.initState();
-    _controller = new TabController(vsync: this, length: PAGES.length);
+    _controller = new TabController(vsync: this, length: PAGE.length);
     _controller.addListener(() {
       setState(() {
-        _currentTab = PAGES[_controller.index];
+        _currentTab = PAGE[_controller.index];
       });
     });
-    _currentTab = PAGES[_controller.index];
+    _currentTab = PAGE[_controller.index];
   }
 
   @override
@@ -61,7 +61,7 @@ class BaoOnlineAppState extends State<BaoOnline>
                 controller: _controller,
                 isScrollable: false,
                 indicatorColor: themeData.textTheme.title.color,
-                tabs: PAGES.map((Page page) {
+                tabs: PAGE.map((Page page) {
                   return new Tab(
                       icon: new ImageIcon(
                           new AssetImage('assets/icons/${page.icon}')));
@@ -70,7 +70,7 @@ class BaoOnlineAppState extends State<BaoOnline>
             ),
             body: new TabBarView(
                 controller: _controller,
-                children: PAGES.map((Page page) {
+                children: PAGE.map((Page page) {
                   switch (page.service) {
                     case Service.TOTAL_NEWS:
                       return new NewsPage();

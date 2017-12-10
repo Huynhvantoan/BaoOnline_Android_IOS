@@ -12,7 +12,8 @@ class Page {
   final Color color;
 }
 
-final List<Page> PAGES = <Page>[
+// ignore: non_constant_identifier_names
+final List<Page> PAGE = <Page>[
   new Page(
       service: Service.TOTAL_NEWS,
       text: Strings.total_news,
