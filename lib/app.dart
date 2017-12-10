@@ -64,7 +64,7 @@ class BaoOnlineAppState extends State<BaoOnline>
                 tabs: PAGE.map((Page page) {
                   return new Tab(
                       icon: new ImageIcon(
-                          new AssetImage('assets/icons/${page.icon}')));
+                            new AssetImage('assets/icons/${page.icon}')));
                 }).toList(),
               ),
             ),
