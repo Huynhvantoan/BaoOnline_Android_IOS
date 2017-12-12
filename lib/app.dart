@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:baoonline/common/services.dart';
 import 'package:baoonline/news/news_page.dart';
+import 'package:baoonline/details/details_page.dart';
 
 final ThemeData _kGalleryLightTheme = new ThemeData(
   brightness: Brightness.light,
@@ -73,7 +74,7 @@ class BaoOnlineAppState extends State<BaoOnline>
                 children: PAGE.map((Page page) {
                   switch (page.service) {
                     case Service.TOTAL_NEWS:
-                      return new NewsPage();
+                      return new DetailsPage();
                       break;
                     case Service.NEWS_HEALTH:
                       return new NewsPage();
