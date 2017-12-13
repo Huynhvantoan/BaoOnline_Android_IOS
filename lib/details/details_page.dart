@@ -22,7 +22,7 @@ class _DetailsPageState extends State<DetailsPage> {
     var document = parse(
         '<body>Hello world! <a href="www.html5rocks.com">HTML5 rocks!');
     print("testLogger="+document.outerHtml);
-    return new Text("Data test");
+    return new Text("Data test1");
   }
 
 }
