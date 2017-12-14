@@ -28,5 +28,5 @@ final List<Page> PAGE = <Page>[
       service: Service.LIVE_STRONG,
       text: Strings.live_strong,
       icon: 'imgur.png',
-      color: Colors.yellow)
+      color: Colors.black)
 ];
