@@ -72,5 +72,7 @@ class _NewsPageState extends State<NewsPage> {
             duration: new Duration(milliseconds: 200)),
         onRefresh: _onRefresh);*/
   }
-
+ /* Future<List<ImageItem>> _onRefresh() {
+    return getMostViral();
+  }*/
 }
