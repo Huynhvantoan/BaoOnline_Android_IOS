@@ -20,7 +20,7 @@ class _NewsPageState extends State<NewsPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         appBar: new AppBar(
-          title: new Text("Load local JSON file"),
+          title: new Text("Test Load local JSON file"),
         ),
         body: new Container(
           child: new Center(
